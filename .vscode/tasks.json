@@ -1,0 +1,41 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Run ALU",
+      "type": "shell",
+      "command": "vsim -do \"vlib work; vcom src/alu_32.vhd; vcom testbench/tb_alu_32.vhd; vsim work.tb_alu_32; add wave *; run 200 ns\"",
+      "group": "build"
+    },
+    {
+      "label": "Run Data Memory",
+      "type": "shell",
+      "command": "vsim -do \"vlib work; vcom src/data_memory_32.vhd; vcom testbench/tb_data_memory_32.vhd; vsim work.tb_data_memory_32; add wave *; run 100 ns\"",
+      "group": "build"
+    },
+    {
+      "label": "Run Registers File",
+      "type": "shell",
+      "command": "vsim -do \"vlib work; vcom src/register_file_32.vhd; vcom testbench/tb_register_file_32.vhd; vsim work.tb_register_file_32; add wave *; run 200 ns\"",
+      "group": "build"
+    },
+    {
+      "label": "Run Instruction Memory",
+      "type": "shell",
+      "command": "vsim -do \"vlib work; vcom src/instruction_memory_32.vhd; vcom testbench/tb_instruction_memory_32.vhd; vsim work.tb_instruction_memory_32; add wave *; run 100 ns\"",
+      "group": "build"
+    },
+    {
+      "label": "Run ALU Control",
+      "type": "shell",
+      "command": "vsim -do \"vlib work; vcom src/alu_control_32.vhd; vcom testbench/tb_alu_control_32.vhd; vsim work.tb_alu_control_32; add wave *; run 200 ns\"",
+      "group": "build"
+    },
+    {
+      "label": "Run Control Unit",
+      "type": "shell",
+      "command": "vsim -do \"vlib work; vcom src/control_unit_32.vhd; vcom testbench/tb_control_unit_32.vhd; vsim work.tb_control_unit_32; add wave *; run 200 ns\"",
+      "group": "build"
+    }
+  ]
+}
