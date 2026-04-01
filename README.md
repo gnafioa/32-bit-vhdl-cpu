@@ -112,7 +112,8 @@ ModelSim Documentation
 👤 Author
 
 Glenn AshiteyFio Ashitey & Jeffrey Somuah Sarpong
-Computer Engineering Student
+
+Computer Engineering Students
 
 ⭐ If you found this helpful
 
